@@ -1,0 +1,408 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="Welcome to New Eatelicious Fast Food &amp; Cafe, situated in front of Professor Rajendra Singh Rajju Bhaiyya University, Naini, Prayagraj." name="description"/>
+  <title>
+   New Eatelicious Fast Food &amp; Cafe
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+            font-family: 'Roboto', sans-serif;
+        }
+        .fade-in {
+            animation: fadeIn 2s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        .bounce {
+            animation: bounce 2s infinite;
+        }
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(-30px);
+            }
+            60% {
+                transform: translateY(-15px);
+            }
+        }
+  </style>
+ </head>
+ <body class="bg-gray-100">
+  <header class="bg-white shadow-md">
+   <div class="container mx-auto flex justify-between items-center p-4">
+    <div class="flex items-center space-x-4">
+     <img alt="Logo of New Eatelicious Fast Food &amp; Cafe, featuring a stylized burger and drink" class="h-12 w-12" height="48" src="logo.png.jpg" width="48"/>
+     <h1 class="text-2xl font-bold text-gray-800">
+      New Eatelicious Fast Food &amp; Cafe
+     </h1>
+    </div>
+    <nav>
+     <ul class="flex space-x-4">
+      <li>
+       <a class="text-gray-600 hover:text-gray-800" href="#home">
+        Home
+       </a>
+      </li>
+      <li>
+       <a class="text-gray-600 hover:text-gray-800" href="#menu">
+        Menu
+       </a>
+      </li>
+      <li>
+       <a class="text-gray-600 hover:text-gray-800" href="#location">
+        Location
+       </a>
+      </li>
+      <li>
+       <a class="text-gray-600 hover:text-gray-800" href="#contact">
+        Contact
+       </a>
+      </li>
+     </ul>
+    </nav>
+   </div>
+  </header>
+  <title>Image Slider</title>
+  <style>
+      body {
+          margin: 0;
+          font-family: Arial, sans-serif;
+          background-color: #f0f0f0; /* Light background for contrast */
+      }
+
+      .slider {
+          position: relative;
+          max-width: 800px; /* Adjust as needed */
+          margin: auto;
+          overflow: hidden;
+          border: 2px solid #ccc; /* Optional: border around the slider */
+          border-radius: 10px; /* Optional: rounded corners */
+          box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Optional: shadow effect */
+      }
+
+      .slides {
+          display: flex;
+          transition: transform 0.5s ease-in-out;
+      }
+
+      .slide {
+          min-width: 100%;
+          box-sizing: border-box;
+      }
+
+      .slide img {
+          width: 100%;
+          height: auto; /* Maintain aspect ratio */
+          border-radius: 10px; /* Optional: rounded corners for images */
+      }
+
+      button {
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          background-color: rgba(255, 255, 255, 0.7);
+          border: none;
+          cursor: pointer;
+          padding: 10px;
+          font-size: 18px;
+          border-radius: 5px; /* Rounded button corners */
+          transition: background-color 0.3s;
+      }
+
+      .prev {
+          left: 10px;
+      }
+
+      .next {
+          right: 10px;
+      }
+
+      button:hover {
+          background-color: rgba(255, 255, 255, 1);
+      }
+  </style>
+</head>
+<body>
+
+  <section class="slider" id="slider">
+      <div class="slides">
+          <div class="slide active">
+              <img src="slides.1.jpg" alt="Image 1">
+          </div>
+          <div class="slide">
+              <img src="slides.2.jpg" alt="Image 2">
+          </div>
+          <div class="slide">
+              <img src="slides.3.jpg" alt="Image 3">
+          </div>
+      </div>
+      <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+      <button class="next" onclick="changeSlide(1)">&#10095;</button>
+  </section>
+  
+  <script src="script.js"></script>
+</body>
+  <section class="py-16 bg-white" id="intro">
+   <div class="container mx-auto text-center fade-in">
+    <div class="bg-gray-100 p-8 rounded-lg shadow-lg">
+     <h2 class="text-3xl font-bold mb-4 bounce">
+      Welcome to New Eatelicious Fast Food &amp; Cafe
+     </h2>
+     <p class="text-xl mb-8">
+      At New Eatelicious Fast Food &amp; Cafe, we pride ourselves on offering a delightful dining experience with a variety of delicious fast food options. Located conveniently in front of Professor Rajendra Singh Rajju Bhaiyya University, Naini, Prayagraj, we are the perfect spot for students, faculty, and visitors to enjoy a tasty meal in a cozy atmosphere.
+     </p>
+     <p class="text-lg font-semibold mb-8">
+      Address: In front of Professor Rajendra Singh Rajju Bhaiyya University, Naini, Prayagraj, Uttar Pradesh, India
+     </p>
+     <a class="bg-red-500 text-white px-6 py-3 rounded-full font-bold hover:bg-red-600 transition duration-300" href="#menu">
+      Explore Our Menu
+     </a>
+    </div>
+   </div>
+  </section>
+  <section class="py-16 bg-white" id="menu">
+   <div class="container mx-auto">
+    <h2 class="text-3xl font-bold text-center mb-12">
+     Our Menu
+    </h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+     <div class="bg-gray-100 p-6 rounded-lg shadow-md">
+      <img alt="A delicious cheeseburger with lettuce, tomato, and cheese" class="w-full h-48 object-cover rounded-lg mb-4" height="300" src="https://storage.googleapis.com/a1aa/image/8WCvAcuqdnbQIpLSemQtGCyIqKkdj2dLdOCjJSuwYyLHMd7JA.jpg" width="400"/>
+      <h3 class="text-xl font-bold mb-2">
+       Cheeseburger
+      </h3>
+      <p class="text-gray-700 mb-4">
+       A delicious cheeseburger with fresh lettuce, tomato, and cheese.
+      </p>
+      <p class="text-red-500 font-bold">
+       $5.99
+      </p>
+     </div>
+     <div class="bg-gray-100 p-6 rounded-lg shadow-md">
+      <img alt="A plate of crispy french fries with a side of ketchup" class="w-full h-48 object-cover rounded-lg mb-4" height="300" src="https://storage.googleapis.com/a1aa/image/TeKGnU2vTMVfQEJC6fSc2z7yT4SITdBtesmWriF1L4JBhpbPB.jpg" width="400"/>
+      <h3 class="text-xl font-bold mb-2">
+       French Fries
+      </h3>
+      <p class="text-gray-700 mb-4">
+       Crispy and golden french fries served with a side of ketchup.
+      </p>
+      <p class="text-red-500 font-bold">
+       $2.99
+      </p>
+     </div>
+     <div class="bg-gray-100 p-6 rounded-lg shadow-md">
+      <img alt="A refreshing glass of iced lemonade with a slice of lemon" class="w-full h-48 object-cover rounded-lg mb-4" height="300" src="https://storage.googleapis.com/a1aa/image/fhPQiZQ5eYjuRktjMUrEW2wjll9XZv0cLLPwFs9Z8qwVY62TA.jpg" width="400"/>
+      <h3 class="text-xl font-bold mb-2">
+       Lemonade
+      </h3>
+      <p class="text-gray-700 mb-4">
+       A refreshing glass of iced lemonade with a slice of lemon.
+      </p>
+      <p class="text-red-500 font-bold">
+       $1.99
+      </p>
+     </div>
+     <div class="bg-gray-100 p-6 rounded-lg shadow-md">
+      <img alt="A slice of rich chocolate cake with a cherry on top" class="w-full h-48 object-cover rounded-lg mb-4" height="300" src="https://storage.googleapis.com/a1aa/image/AP61ON3fhwWJS6wzLKS7pkUOeeoCYKX6LFnLLiQZedUIhpbPB.jpg" width="400"/>
+      <h3 class="text-xl font-bold mb-2">
+       Chocolate Cake
+      </h3>
+      <p class="text-gray-700 mb-4">
+       A slice of rich chocolate cake with a cherry on top.
+      </p>
+      <p class="text-red-500 font-bold">
+       $3.99
+      </p>
+     </div>
+     <div class="bg-gray-100 p-6 rounded-lg shadow-md">
+      <img alt="A bowl of fresh garden salad with various vegetables" class="w-full h-48 object-cover rounded-lg mb-4" height="300" src="https://storage.googleapis.com/a1aa/image/R9UjTBVbkXZxCp0xszMgWAf9EQuxJzoLO079NL3W6L6MMd7JA.jpg" width="400"/>
+      <h3 class="text-xl font-bold mb-2">
+       Garden Salad
+      </h3>
+      <p class="text-gray-700 mb-4">
+       A bowl of fresh garden salad with various vegetables.
+      </p>
+      <p class="text-red-500 font-bold">
+       $4.99
+      </p>
+     </div>
+     <div class="bg-gray-100 p-6 rounded-lg shadow-md">
+      <img alt="A cup of hot cappuccino with a heart-shaped foam art" class="w-full h-48 object-cover rounded-lg mb-4" height="300" src="https://storage.googleapis.com/a1aa/image/pPAKRuGU6WrbIZKgb90jd4sK6kSSc1lVZ1wepyQB6yxLMd7JA.jpg" width="400"/>
+      <h3 class="text-xl font-bold mb-2">
+       Cappuccino
+      </h3>
+      <p class="text-gray-700 mb-4">
+       A cup of hot cappuccino with a heart-shaped foam art.
+      </p>
+      <p class="text-red-500 font-bold">
+       $2.99
+      </p>
+     </div>
+    </div>
+   </div>
+  </section>
+  <section class="py-16 bg-gray-100" id="location">
+   <div class="container mx-auto text-center">
+    <h2 class="text-3xl font-bold mb-8">
+     Our Location
+    </h2>
+    <div class="w-full h-64">
+     <iframe class="w-full h-full rounded-lg" loading="lazy" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d901.375178418059!2d81.887127!3d25.35453!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39854bb19c59c563%3A0x7bcb95183fff3326!2sNew%20Eatelicious%20fast%20food%20%26%20cafe!5e0!3m2!1sen!2sin!4v1733246600759!5m2!1sen!2sin">
+     </iframe>
+    </div>
+   </div>
+  </section>
+  <section class="py-16 bg-white" id="contact">
+   <div class="container mx-auto text-center">
+    <h2 class="text-3xl font-bold mb-8">
+     Contact Us
+    </h2>
+    <div class="flex justify-center space-x-4 mb-8">
+     <a class="text-gray-600 hover:text-gray-800" href="https://www.facebook.com">
+      <i class="fab fa-facebook fa-2x">
+      </i>
+     </a>
+     <a class="text-gray-600 hover:text-gray-800" href="https://www.twitter.com">
+      <i class="fab fa-twitter fa-2x">
+      </i>
+     </a>
+     <a class="text-gray-600 hover:text-gray-800" href="https://www.instagram.com/new_eatelicious.in">
+      <i class="fab fa-instagram fa-2x">
+      </i>
+     </a>
+     <a class="text-gray-600 hover:text-gray-800" href="https://www.zomato.com">
+      <i class="fas fa-utensils fa-2x">
+      </i>
+     </a>
+     <a class="text-gray-600 hover:text-gray-800" href="https://wa.me/8287423016">
+      <i class="fab fa-whatsapp fa-2x">
+      </i>
+     </a>
+    </div>
+    <p class="text-gray-700">
+     For reservations and inquiries, call us at
+     <span class="font-bold">
+      +91 12345 67890
+     </span>
+    </p>
+   </div>
+  </section>
+  <section class="py-16 bg-gray-100">
+    <div class="container mx-auto text-center">
+        <h2 class="text-3xl font-bold mb-8">
+            Our Cafe
+        </h2>
+        <img alt="Exterior view of New Eatelicious Fast Food &amp; Cafe with a signboard and seating area" 
+             class="w-full h-auto max-h-64 object-cover rounded-lg mb-4" 
+             height="1152"
+             src="cafe.frame.jpg" width="580" />
+    </div>
+</section>
+  <section class="py-16 bg-white" id="founders">
+    <div class="container mx-auto text-center">
+     <h2 class="text-3xl font-bold mb-8">
+      Meet the Founders
+     </h2>
+     <div class="flex flex-wrap justify-center gap-8">
+      <div class="bg-gray-100 p-6 rounded-lg shadow-md w-64">
+       <img alt="Profile picture of Aman Singh, smiling and standing in front of the cafe" class="w-24 h-24 object-cover rounded-full mx-auto mb-4" height="96" src="https://storage.googleapis.com/a1aa/image/LXk84ulFLXqRAZtaD2uTiEspcwikWsjHAztbREmBz6pgn89E.jpg" width="96"/>
+       <h3 class="text-lg font-bold mb-2">
+        Aman Singh
+       </h3>
+       <p class="text-gray-700 mb-4 text-sm">
+        Aman is the passionate founder of New Eatelicious Fast Food &amp; Cafe. With over 5+ years of experience in the culinary industry, he brings a unique blend of flavors and hospitality to the cafe.
+       </p>
+       <div class="flex justify-center space-x-2">
+        <a class="text-gray-600 hover:text-gray-800" href="https://www.facebook.com">
+         <i class="fab fa-facebook fa-lg">
+         </i>
+        </a>
+        <a class="text-gray-600 hover:text-gray-800" href="https://www.twitter.com">
+         <i class="fab fa-twitter fa-lg">
+         </i>
+        </a>
+        <a class="text-gray-600 hover:text-gray-800" href="https://www.instagram.com">
+         <i class="fab fa-instagram fa-lg">
+         </i>
+        </a>
+        <a class="text-gray-600 hover:text-gray-800" href="https://www.linkedin.com">
+         <i class="fab fa-linkedin fa-lg">
+         </i>
+        </a>
+       </div>
+      </div>
+      <div class="bg-gray-100 p-6 rounded-lg shadow-md w-64">
+       <img alt="Profile picture of Abhishek Singh, smiling and standing in front of the cafe" class="w-24 h-24 object-cover rounded-full mx-auto mb-4" height="96" src="https://storage.googleapis.com/a1aa/image/4ilfCVW2DXWiSqp5etmP2XY7XHdfrTRxFgE6P7jVPLAA8kvnA.jpg" width="96"/>
+       <h3 class="text-lg font-bold mb-2">
+        Abhishek Singh
+       </h3>
+       <p class="text-gray-700 mb-4 text-sm">
+        Abbhishek is the co-founder and business partner of New Eatelicious Fast Food &amp; Cafe. With a keen eye for detail and a passion for customer service, he ensures every guest has a memorable experience.
+       </p>
+       <div class="flex justify-center space-x-2">
+        <a class="text-gray-600 hover:text-gray-800" href="https://www.facebook.com">
+         <i class="fab fa-facebook fa-lg">
+         </i>
+        </a>
+        <a class="text-gray-600 hover:text-gray-800" href="https://www.twitter.com">
+         <i class="fab fa-twitter fa-lg">
+         </i>
+        </a>
+        <a class="text-gray-600 hover:text-gray-800" href="https://www.instagram.com">
+         <i class="fab fa-instagram fa-lg">
+         </i>
+        </a>
+        <a class="text-gray-600 hover:text-gray-800" href="https://www.linkedin.com">
+         <i class="fab fa-linkedin fa-lg">
+         </i>
+        </a>
+       </div>
+      </div>
+     </div>
+    </div>
+   </section>
+   <title>Franchise Application</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body class="bg-white text-gray-800">
+    <section class="py-16 bg-white" id="franchise">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-8">Apply for Our Franchise</h2>
+            <div class="bg-gray-100 p-8 rounded-lg shadow-lg">
+                <p class="text-xl mb-8">
+                    Join the New Eatelicious Fast Food &amp; Cafe family by applying for a franchise. We offer comprehensive support and training to help you succeed in the fast food industry.
+                </p>
+                <form class="space-y-4">
+                    <div>
+                        <a href="https://wa.me/8287423016" target="_blank" class="apply-now-button inline-block bg-green-500 text-white py-2 px-4 rounded-lg font-bold text-lg hover:bg-green-600">Apply Now</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <footer class="bg-gray-800 text-white py-4">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2024 New Eatelicious Fast Food &amp; Cafe. All rights reserved.</p>
+            <p>
+                <a href="#terms" class="text-gray-400 hover:text-white">Terms & Conditions</a> | 
+                <a href="#privacy" class="text-gray-400 hover:text-white">Privacy Policy</a>
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
