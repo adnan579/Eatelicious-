@@ -25,8 +25,7 @@ Welcome to the Eatelicious Cafe project! This is a simple website showcasing our
 - HTML5
 - CSS3
 - JavaScript
-- [Tailwind CSS](https://tailwindcss.com/) (or any other CSS framework you used)
-- [Any other libraries or frameworks you used]
+- [Tailwind CSS](https://tailwindcss.com/)
 
 ## Installation
 
@@ -61,8 +60,7 @@ Welcome to the Eatelicious Cafe project! This is a simple website showcasing our
 - HTML5
 - CSS3
 - JavaScript
-- [Tailwind CSS](https://tailwindcss.com/) (or any other CSS framework you used)
-- [Any other libraries or frameworks you used]
+- [Tailwind CSS](https://tailwindcss.com/) 
 
 ## Installation
 
